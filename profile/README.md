@@ -68,6 +68,9 @@ Each family has its own index with a repo-by-repo breakdown.
 | ⚙️ **Core operations** | Sysadmin helpers, data movement, day-to-day glue | [browse →](https://github.com/Nucleomics-VIB/.github/blob/main/profile/families/core-operations.md) |
 | 🏛️ **Legacy & reference** | Stable, still-cited, no longer actively developed | [browse →](https://github.com/Nucleomics-VIB/.github/blob/main/profile/families/legacy.md) |
 
+Prefer to browse rather than be routed?
+**[All repositories, sorted by latest activity →](https://github.com/orgs/Nucleomics-VIB/repositories?sort=updated)**
+
 ## Reading a repo name
 
 Our names are a convention, not an accident. Once you know the prefix, you know
