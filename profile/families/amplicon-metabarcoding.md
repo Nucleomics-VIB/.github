@@ -35,4 +35,5 @@ For ITS, `NC_NextITS` handles demultiplexing itself — go straight there.
 ## Related
 
 - Containerised and extended variants of these pipelines are internal.
+- **Shotgun metagenomics** (whole-community, no amplicon step) is a service we run, but the pipeline is internal — ask the Core rather than looking for a public repo.
 - Earlier short-read and tutorial-stage work → [Legacy & reference](./legacy.md)
