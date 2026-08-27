@@ -86,6 +86,12 @@ what you are looking at:
 | `dev_wt_*` | An internal web tool under development | *(internal)* |
 | `wbt_*` | A deployed internal web tool | *(internal)* |
 
+Not every name follows it. Repos that predate the convention (`benchmarks`,
+`InSilico_PCR`, `Shiny-apps`, `variant_analysis`, `16S_analysis_pipeline`) and forks that
+keep their upstream name (`ChimericSeq`, `mplotter`) are left as they are on purpose — a
+rename leaves a silent GitHub redirect, so old clones keep working while quietly pointing
+somewhere else. Use the topic filters below rather than the prefix when you are unsure.
+
 ## Filter by topic
 
 Every repository carries topics on four axes. These are curated, not guessed — filtering
@@ -135,4 +141,4 @@ Created and maintained by **Stephane Plaisance** — **VIB Nucleomics Core**.
 
 Contributions from the Core's bioinformatics and lab teams across the repos listed above.
 
-<sub>Org profile v1.2.2 · 2026-08-27 · <a href="https://www.nucleomics.be">nucleomics.be</a></sub>
+<sub>Org profile v1.2.3 · 2026-08-27 · <a href="https://www.nucleomics.be">nucleomics.be</a></sub>
