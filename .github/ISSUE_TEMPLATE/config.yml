@@ -1,0 +1,11 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Which repository do I need?
+    url: https://github.com/Nucleomics-VIB
+    about: The organization page routes by the data you are holding — start there.
+  - name: Browse by family
+    url: https://github.com/Nucleomics-VIB/.github/tree/main/profile/families
+    about: Repo-by-repo indexes per family — platforms, amplicons, genomes, reporting, operations, legacy.
+  - name: Sequencing services at VIB Nucleomics Core
+    url: https://nucleomicscore.sites.vib.be/en
+    about: Questions about a run, a quote, or a sample rather than about the code.

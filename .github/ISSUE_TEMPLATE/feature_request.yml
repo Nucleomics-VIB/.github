@@ -1,0 +1,29 @@
+name: Change or addition
+description: Propose a change to what this repository does
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: The problem
+      description: What you cannot do today, in terms of the analysis rather than the code.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What you propose
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: What you considered instead
+      description: Including doing it outside this repository.
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Scope
+      options:
+        - label: This would not add a new dependency to replace a few lines of shell.
+        - label: This keeps site-specific paths configurable rather than hard-coded.

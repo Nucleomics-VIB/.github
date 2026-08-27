@@ -1,0 +1,42 @@
+name: Question — which tool should I use?
+description: You have data and are not sure which repository fits
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        The [organization page](https://github.com/Nucleomics-VIB) routes by the data you
+        are holding — try the **Start here** table first. If it does not cover your case,
+        ask here and we will point you.
+  - type: dropdown
+    id: platform
+    attributes:
+      label: What produced your data
+      options:
+        - PacBio (Revio / Sequel)
+        - Oxford Nanopore
+        - Element AVITI
+        - MGI
+        - Public data, not ours
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: assay
+    attributes:
+      label: Assay
+      placeholder: "e.g. full-length 16S, ITS metabarcoding, WGS, BRB-seq, exome"
+    validations:
+      required: true
+  - type: textarea
+    id: goal
+    attributes:
+      label: What you are trying to get out of it
+      placeholder: "e.g. a taxonomy table per sample, variant calls against mm39, a QC report to send a collaborator"
+    validations:
+      required: true
+  - type: textarea
+    id: tried
+    attributes:
+      label: What you already tried
+      description: Which of our repositories you looked at, and why it did not fit.

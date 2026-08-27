@@ -1,0 +1,75 @@
+name: Bug report
+description: Something in this repository does not do what it says
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Open this in the repository the problem is in. Sequencing bugs are usually
+        data-shaped, so the assay and the instrument matter as much as the error text.
+  - type: input
+    id: version
+    attributes:
+      label: Commit or release
+      description: "`git rev-parse --short HEAD`, or the release tag you cloned."
+      placeholder: "e.g. a1b2c3d, or v1.4.0"
+    validations:
+      required: true
+  - type: textarea
+    id: command
+    attributes:
+      label: Command you ran
+      description: Verbatim, please. Anonymise paths if you must, but keep the flags.
+      render: shell
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: Paste the error output rather than describing it.
+      render: shell
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected instead
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Sequencing platform
+      options:
+        - PacBio (Revio / Sequel)
+        - Oxford Nanopore
+        - Element AVITI
+        - MGI
+        - Not platform-specific
+        - Other
+    validations:
+      required: true
+  - type: dropdown
+    id: environment
+    attributes:
+      label: How you ran it
+      options:
+        - Container (Docker / Singularity)
+        - conda environment
+        - Natively on the host
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: Operating system
+      placeholder: "e.g. Ubuntu 22.04, macOS 14.5"
+  - type: checkboxes
+    id: hygiene
+    attributes:
+      label: Before submitting
+      options:
+        - label: I have not pasted credentials, tokens, or internal hostnames above.
+          required: true
+        - label: I checked whether a `_docker` or `_nf` sibling of this repository exists and is the one I should be running.
