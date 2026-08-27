@@ -69,7 +69,9 @@ Each family has its own index with a repo-by-repo breakdown.
 | 🏛️ **Legacy & reference** | Stable, still-cited, no longer actively developed | [browse →](https://github.com/Nucleomics-VIB/.github/blob/main/profile/families/legacy.md) |
 
 Prefer to browse rather than be routed?
-**[All repositories, sorted by latest activity →](https://github.com/orgs/Nucleomics-VIB/repositories?sort=updated)**
+**[All repositories on GitHub →](https://github.com/orgs/Nucleomics-VIB/repositories?sort=updated)**
+— ordered by last push. Note that org-wide maintenance batches (licence and template
+sweeps) count as pushes, so recent dates there do not always mean recent work.
 
 ## Reading a repo name
 
@@ -130,4 +132,4 @@ Created and maintained by **Stephane Plaisance** — **VIB Nucleomics Core**.
 
 Contributions from the Core's bioinformatics and lab teams across the repos listed above.
 
-<sub>Org profile v1.2.0 · 2026-08-27 · <a href="https://www.nucleomics.be">nucleomics.be</a></sub>
+<sub>Org profile v1.2.1 · 2026-08-27 · <a href="https://www.nucleomics.be">nucleomics.be</a></sub>
