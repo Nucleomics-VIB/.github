@@ -7,7 +7,8 @@ at <https://github.com/Nucleomics-VIB>.
 - [`profile/families/`](profile/families/) — per-family repository indexes
 
 It also holds the **default community health files** for the organization. GitHub applies
-these to every public Nucleomics-VIB repository that does not carry its own copy:
+these to every Nucleomics-VIB repository that does not carry its own copy — defaults are
+inherited from this public repository only, so these are the files every repo falls back to:
 
 - [`CONTRIBUTING.md`](CONTRIBUTING.md) — how to report a problem and propose a change
 - [`SECURITY.md`](SECURITY.md) — how to report something that should not be public

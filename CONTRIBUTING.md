@@ -1,8 +1,8 @@
 # Contributing to VIB Nucleomics Core repositories
 
-Thanks for looking. This file is the organization-wide default: it applies to every
-public **Nucleomics-VIB** repository that does not carry its own `CONTRIBUTING.md`.
-Where a repository has its own, that one wins.
+Thanks for looking. This file is the organization-wide default: GitHub applies it to every
+**Nucleomics-VIB** repository that does not carry its own `CONTRIBUTING.md`. Where a
+repository has its own, that one wins.
 
 Start at the [organization page](https://github.com/Nucleomics-VIB) if you are not yet
 sure which repository you need — it routes by the data you are holding.
