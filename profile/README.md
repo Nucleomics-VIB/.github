@@ -84,9 +84,20 @@ what you are looking at:
 | `dev_wt_*` | An internal web tool under development | *(internal)* |
 | `wbt_*` | A deployed internal web tool | *(internal)* |
 
-Repos are tagged with [topics](https://github.com/orgs/Nucleomics-VIB/repositories)
-for language (`bash`, `python`, `r`, `nextflow`) and shape (`pipeline`, `webtool`,
-`container`, `shiny-app`) — filter on those to narrow a search fast.
+## Filter by topic
+
+Every repository carries topics on four axes. These are curated, not guessed — filtering
+on one gives you a real shortlist:
+
+| Axis | Pick one | |
+|---|---|---|
+| **Platform** | [pacbio](https://github.com/orgs/Nucleomics-VIB/repositories?q=topic%3Apacbio) · [nanopore](https://github.com/orgs/Nucleomics-VIB/repositories?q=topic%3Ananopore) · [aviti](https://github.com/orgs/Nucleomics-VIB/repositories?q=topic%3Aaviti) · [mgi](https://github.com/orgs/Nucleomics-VIB/repositories?q=topic%3Amgi) | which instrument made the data |
+| **Assay** | [16s](https://github.com/orgs/Nucleomics-VIB/repositories?q=topic%3A16s) · [its](https://github.com/orgs/Nucleomics-VIB/repositories?q=topic%3Aits) · [amplicon](https://github.com/orgs/Nucleomics-VIB/repositories?q=topic%3Aamplicon) · [shotgun](https://github.com/orgs/Nucleomics-VIB/repositories?q=topic%3Ashotgun) · [rnaseq](https://github.com/orgs/Nucleomics-VIB/repositories?q=topic%3Arnaseq) · [assembly](https://github.com/orgs/Nucleomics-VIB/repositories?q=topic%3Aassembly) · [variant-calling](https://github.com/orgs/Nucleomics-VIB/repositories?q=topic%3Avariant-calling) | what was done to it |
+| **Shape** | [pipeline](https://github.com/orgs/Nucleomics-VIB/repositories?q=topic%3Apipeline) · [toolbox](https://github.com/orgs/Nucleomics-VIB/repositories?q=topic%3Atoolbox) · [container](https://github.com/orgs/Nucleomics-VIB/repositories?q=topic%3Acontainer) · [shiny-app](https://github.com/orgs/Nucleomics-VIB/repositories?q=topic%3Ashiny-app) · [visualization](https://github.com/orgs/Nucleomics-VIB/repositories?q=topic%3Avisualization) · [benchmark](https://github.com/orgs/Nucleomics-VIB/repositories?q=topic%3Abenchmark) | what kind of thing it is |
+| **Lifecycle** | [legacy](https://github.com/orgs/Nucleomics-VIB/repositories?q=topic%3Alegacy) | stable, no longer developed |
+
+Language topics (`bash`, `python`, `r`, `nextflow`) are there too, but they describe how
+it is written rather than what it does.
 
 > **A note on what you can see.** A good part of the Core's code is internal:
 > LIMS-adjacent web tools, instrument dashboards, pricing calculators, and
@@ -112,4 +123,4 @@ Created and maintained by **Stephane Plaisance** — **VIB Nucleomics Core**.
 
 Contributions from the Core's bioinformatics and lab teams across the repos listed above.
 
-<sub>Org profile v1.0.1 · 2026-08-27 · <a href="https://www.nucleomics.be">nucleomics.be</a></sub>
+<sub>Org profile v1.1.0 · 2026-08-27 · <a href="https://www.nucleomics.be">nucleomics.be</a></sub>
