@@ -9,7 +9,7 @@ pipelines, toolboxes, and web tools that turn raw instrument output into answers
 This organization holds that code — from one-line `awk` helpers to containerised
 Nextflow pipelines.
 
-[![repos](https://img.shields.io/badge/public_repos-27-1f6feb)](https://github.com/orgs/Nucleomics-VIB/repositories)
+[![repos](https://img.shields.io/badge/public_repos-28-1f6feb)](https://github.com/orgs/Nucleomics-VIB/repositories)
 [![platforms](https://img.shields.io/badge/platforms-PacBio_·_ONT_·_AVITI_·_MGI-2da44e)](#families)
 [![licence](https://img.shields.io/badge/licence-CC_BY--SA_3.0-8250df)](http://creativecommons.org/licenses/by-sa/3.0/)
 
@@ -112,4 +112,4 @@ Created and maintained by **Stephane Plaisance** — **VIB Nucleomics Core**.
 
 Contributions from the Core's bioinformatics and lab teams across the repos listed above.
 
-<sub>Org profile v1.0.0 · 2026-08-25 · <a href="https://www.nucleomics.be">nucleomics.be</a></sub>
+<sub>Org profile v1.0.1 · 2026-08-27 · <a href="https://www.nucleomics.be">nucleomics.be</a></sub>
