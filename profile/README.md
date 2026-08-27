@@ -11,7 +11,7 @@ Nextflow pipelines.
 
 [![repos](https://img.shields.io/badge/public_repos-28-1f6feb)](https://github.com/orgs/Nucleomics-VIB/repositories)
 [![platforms](https://img.shields.io/badge/platforms-PacBio_·_ONT_·_AVITI_·_MGI-2da44e)](#families)
-[![licence](https://img.shields.io/badge/licence-CC_BY--SA_3.0-8250df)](http://creativecommons.org/licenses/by-sa/3.0/)
+[![licence](https://img.shields.io/badge/licence-GPL--3.0-8250df)](https://www.gnu.org/licenses/gpl-3.0)
 
 </div>
 
@@ -107,10 +107,17 @@ it is written rather than what it does.
 
 ## Using our code
 
-Most repos carry a [Creative Commons Attribution-ShareAlike 3.0](http://creativecommons.org/licenses/by-sa/3.0/)
-licence: use it, adapt it, redistribute it — credit **VIB Nucleomics Core** and share
-derived work under the same terms. The code is written to be read, mostly Bash and R
-with comments rather than frameworks. A few caveats before you clone:
+Our code is licensed **[GPL-3.0](https://www.gnu.org/licenses/gpl-3.0)**: use it, adapt it,
+redistribute it — credit **VIB Nucleomics Core** and licence derived work under the same
+terms. Documentation and tutorial repos carry
+**[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)** instead, and each repo's
+`LICENSE` is authoritative — the few repos forked from upstream projects keep the upstream
+licence. Everything was relicensed on 2026-08-27 from CC BY-SA 3.0, which no licence scanner
+could read and which Creative Commons does not recommend for source code; copies obtained
+before that date remain available under the old terms.
+
+The code is written to be read, mostly Bash and R with comments rather than frameworks. A few
+caveats before you clone:
 
 - **Pipelines assume our reference layout.** Paths and reference genome locations are
   usually configurable at the top of the script; check there first.
@@ -123,4 +130,4 @@ Created and maintained by **Stephane Plaisance** — **VIB Nucleomics Core**.
 
 Contributions from the Core's bioinformatics and lab teams across the repos listed above.
 
-<sub>Org profile v1.1.0 · 2026-08-27 · <a href="https://www.nucleomics.be">nucleomics.be</a></sub>
+<sub>Org profile v1.2.0 · 2026-08-27 · <a href="https://www.nucleomics.be">nucleomics.be</a></sub>
