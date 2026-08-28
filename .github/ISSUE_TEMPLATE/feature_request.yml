@@ -15,6 +15,17 @@ body:
       label: What you propose
     validations:
       required: true
+  - type: input
+    id: area
+    attributes:
+      label: Path or area
+      description: >-
+        The repo-relative path this concerns, so the issue can be found again from the
+        folder itself — for example `info/dockerhub-portainer-registry-deploy` or
+        `scripts/collect_qc.sh`. Write `whole repository` if it is not scoped to a path.
+      placeholder: "e.g. info/dockerhub-portainer-registry-deploy"
+    validations:
+      required: true
   - type: textarea
     id: alternatives
     attributes:

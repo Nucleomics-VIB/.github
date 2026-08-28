@@ -35,6 +35,35 @@ on names:
 Sequencing bugs are usually data-shaped. Telling us the assay and the instrument saves a
 full round trip.
 
+## Pointing an issue at a folder
+
+GitHub has no way to attach an issue to a path. `CODEOWNERS` scopes *pull-request review*
+by path and does nothing for issues, so folder-scoping is a convention. Three parts, all
+cheap:
+
+1. **Prefix the title with the path.** `[info/dockerhub-portainer-registry-deploy] the
+   registry step assumes a login that the runbook never creates`. This is what makes the
+   issue findable a year later, with
+   `is:issue in:title info/dockerhub-portainer-registry-deploy`.
+2. **Link a permalink, not a branch URL.** Open the folder or file on GitHub and press
+   <kbd>y</kbd> — the address rewrites from `/tree/main/...` to `/tree/<commit-sha>/...`,
+   so it still points at what you were looking at after the folder moves or is renamed.
+   Select the lines first and a `/blob/<sha>/...#L12-L20` link **renders the code inline**
+   in the issue; a `/tree/` link stays a plain link.
+3. **Fill in the "Path or area" field.** Every issue form asks for it. Write
+   `whole repository` when the issue is not scoped to one path — an empty answer just
+   makes the issue harder to route.
+
+Some repositories additionally carry `area:<folder>` labels for their stable top-level
+subtrees — `SP_AI_skills` does. Apply one where it exists. They deliberately stop at the
+top level: a label per nested folder does not scale, which is why the title prefix and the
+permalink carry the precision.
+
+**Questions about the organization itself** — how repositories are laid out, which family
+something belongs to, why a convention exists — belong in
+[`Nucleomics-VIB/.github`](https://github.com/Nucleomics-VIB/.github/issues), not in a
+code repository. Label them `question`.
+
 ## Proposing a change
 
 1. Open an issue first for anything beyond a typo — it costs you nothing and may save you
