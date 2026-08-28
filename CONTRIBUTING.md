@@ -85,10 +85,21 @@ code repository. Label them `question`.
 
 ## Licence
 
-Contributions are accepted under the repository's licence — for most of our code, the
-[Creative Commons Attribution-ShareAlike 3.0](http://creativecommons.org/licenses/by-sa/3.0/)
-licence. By opening a pull request you agree your contribution may be redistributed under
-those terms, with attribution to **VIB Nucleomics Core** and to you.
+Contributions are accepted under the licence of the repository you are contributing to.
+Its `LICENSE` and `NOTICE.md` are authoritative, not this page. Since **2026-08-27** the
+split across the organization is:
+
+- **Code** — [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.html).
+- **Documentation and reference repositories** —
+  [Creative Commons Attribution-ShareAlike 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+- **Forks, and repositories derived from an upstream project**, keep that project's terms.
+
+Repositories relicensed on 2026-08-27 record it in their `NOTICE.md`; copies taken before
+that date stay under the terms they carried at the time. The organization is **no longer**
+under CC BY-SA 3.0 — a file still saying so is out of date.
+
+By opening a pull request you agree your contribution may be redistributed under that
+repository's terms, with attribution to **VIB Nucleomics Core** and to you.
 
 ---
 
