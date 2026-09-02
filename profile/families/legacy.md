@@ -15,7 +15,6 @@ Kept because someone still clones it, or because a current repo grew out of it.
 | [Nanopore_Pinfish_Analysis](https://github.com/Nucleomics-VIB/Nanopore_Pinfish_Analysis) ⭐1 | Customised reporting of ONT `pinfish` transcript-annotation results, with R Markdown and Snakemake | — (`pinfish` deprecated upstream) | 2019-09 |
 | [nanopore-tools_wiki](https://github.com/Nucleomics-VIB/nanopore-tools_wiki) | Companion notes and documentation for [nanopore-tools](https://github.com/Nucleomics-VIB/nanopore-tools), which is still current | — (reference for an active repo) | 2019-08 |
 | [mgi-tools](https://github.com/Nucleomics-VIB/mgi-tools) | Parsers and wrappers for MGI/BGI sequencer output | — (platform retired) | 2023-06 |
-| [Opentrons](https://github.com/Nucleomics-VIB/Opentrons) | Early protocols and utilities for our Opentrons liquid-handling robots. Lab automation continues internally | *(continues internally)* | 2022-12 |
 | [cloud-dl](https://github.com/Nucleomics-VIB/cloud-dl) ⭐1 | First Nextcloud command-line manager | [NC_cloud-dl](https://github.com/Nucleomics-VIB/NC_cloud-dl) | 2021-05 |
 | [mplotter](https://github.com/Nucleomics-VIB/mplotter) ⭐1 | Publication-quality dot plots from MUMmer alignments via `ggplot2`. Small, focused, still functional | [plotting-tools](https://github.com/Nucleomics-VIB/plotting-tools) | 2020-03 |
 | [circos-tools](https://github.com/Nucleomics-VIB/circos-tools) ⭐1 | Helpers for building Circos circular-genome figures | [plotting-tools](https://github.com/Nucleomics-VIB/plotting-tools) | 2018-02 |
