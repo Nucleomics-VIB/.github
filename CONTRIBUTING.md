@@ -9,13 +9,10 @@ sure which repository you need — it routes by the data you are holding.
 
 ## Before you open anything
 
-**Check which kind of repository you are in.** The name tells you:
-
-| Pattern | What it is | What to expect |
-|---|---|---|
-| `*-tools` | A toolbox of many small, independent scripts for one platform or domain | Scripts evolve independently; a fix to one rarely affects the others |
-| `NC_*` | A Core-operated pipeline or application | Production-facing and versioned — the most likely to accept a change |
-| `*_docker` / `*_nf` | A containerised or Nextflow implementation of a sibling pipeline | Fix the behaviour in the implementation you actually ran |
+Repository names do not carry a meaningful prefix or suffix — don't infer what a
+repository is from its name. If you are not sure you are in the right one, start at the
+[organization page](https://github.com/Nucleomics-VIB), or ask in
+[`Nucleomics-VIB/.github`](https://github.com/Nucleomics-VIB/.github/issues).
 
 Repositories listed under **Legacy & reference** on the organization page are stable and
 no longer actively developed. Issues there are read, but a fix may not ship.
