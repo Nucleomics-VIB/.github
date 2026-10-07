@@ -7,7 +7,7 @@ can regenerate a figure for a paper three years after the run.
 | Repo | What it gives you | Language | Last active |
 |---|---|---|---|
 | [plotting-tools](https://github.com/Nucleomics-VIB/plotting-tools) | Shareable plotting code produced at the Core on request or to support data re-analysis. Publication-quality `ggplot2` output with sensible defaults already applied | R | 2025-04 |
-| [Shiny-apps](https://github.com/Nucleomics-VIB/Shiny-apps) ⭐1 | Interactive R/Shiny applications for exploring result tables — the version we hand to a researcher when a static PDF is not enough | R | 2025-06 |
+| [shiny-apps](https://github.com/Nucleomics-VIB/shiny-apps) ⭐1 | Interactive R/Shiny applications for exploring result tables — the version we hand to a researcher when a static PDF is not enough | R | 2025-06 |
 | [benchmarks](https://github.com/Nucleomics-VIB/benchmarks) | Head-to-head comparisons of bio-apps and workflows on real Core data, with the code and the verdict. Consult this before adopting a new tool | Bash, R | 2025-10 |
 
 ## Why benchmarks live here

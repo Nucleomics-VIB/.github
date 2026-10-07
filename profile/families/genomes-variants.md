@@ -6,9 +6,9 @@ library type does something unusual.
 
 | Repo | What it does | Language | Last active |
 |---|---|---|---|
-| [variant_analysis](https://github.com/Nucleomics-VIB/variant_analysis) | Practical small-variant analysis on a server: alignment, GATK-style calling, filtering, and annotation, written as readable steps rather than a black box. The starting point for exome and targeted-panel work | Bash, Python | 2026-02 |
-| [ChimericSeq](https://github.com/Nucleomics-VIB/ChimericSeq) | Detection and characterisation of chimeric reads — integration sites, vector–genome junctions, and library artefacts. Ships with test reads so you can verify behaviour before trusting it on your data | Python | 2025-03 |
-| [BRBseq-tools](https://github.com/Nucleomics-VIB/BRBseq-tools) | Processing for BRB-seq bulk RNA-seq libraries: demultiplexing by well barcode, UMI handling, and count-matrix assembly | Bash, R | 2024-02 |
+| [variant-analysis](https://github.com/Nucleomics-VIB/variant-analysis) | Practical small-variant analysis on a server: alignment, GATK-style calling, filtering, and annotation, written as readable steps rather than a black box. The starting point for exome and targeted-panel work | Bash, Python | 2026-02 |
+| [chimericseq-nc](https://github.com/Nucleomics-VIB/chimericseq-nc) | Detection and characterisation of chimeric reads — integration sites, vector–genome junctions, and library artefacts. Ships with test reads so you can verify behaviour before trusting it on your data | Python | 2025-03 |
+| [brbseq-tools](https://github.com/Nucleomics-VIB/brbseq-tools) | Processing for BRB-seq bulk RNA-seq libraries: demultiplexing by well barcode, UMI handling, and count-matrix assembly | Bash, R | 2024-02 |
 
 ## Where the reads come from
 
