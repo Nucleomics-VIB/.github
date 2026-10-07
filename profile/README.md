@@ -141,4 +141,4 @@ Created and maintained by **Stephane Plaisance** — **VIB Nucleomics Core**.
 
 Contributions from the Core's bioinformatics and lab teams across the repos listed above.
 
-<sub>Org profile v1.3.0 · 2026-10-07 · <a href="https://www.nucleomics.be">nucleomics.be</a></sub>
+<sub>Org profile v1.3.1 · 2026-10-07 · <a href="https://www.nucleomics.be">nucleomics.be</a></sub>
