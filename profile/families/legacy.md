@@ -19,6 +19,7 @@ Kept because someone still clones it, or because a current repo grew out of it.
 | [mplotter](https://github.com/Nucleomics-VIB/mplotter) ⭐1 | Publication-quality dot plots from MUMmer alignments via `ggplot2`. Small, focused, still functional | [plotting-tools](https://github.com/Nucleomics-VIB/plotting-tools) | 2020-03 |
 | [circos-tools](https://github.com/Nucleomics-VIB/circos-tools) ⭐1 | Helpers for building Circos circular-genome figures | [plotting-tools](https://github.com/Nucleomics-VIB/plotting-tools) | 2018-02 |
 | [genepattern-tools](https://github.com/Nucleomics-VIB/genepattern-tools) | Scripts and wrappers for GenePattern modules, from when we hosted a GenePattern server | — (service retired) | 2019-01 |
+| [toy-scripts](https://github.com/Nucleomics-VIB/toy-scripts) | Three small Bash exercises (prime numbers, Fibonacci sequence), written while testing AI-assisted coding. Not a tool: kept as a short, readable example | — | 2024-06 |
 
 ## Before you clone something from this list
 
