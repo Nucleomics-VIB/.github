@@ -11,7 +11,7 @@ If you are new to a platform, start here before reaching for an assay pipeline.
 | [pacbio-tools](https://github.com/Nucleomics-VIB/pacbio-tools) ⭐8 | The largest instrument-specific toolbox we have, ~70 scripts: Sequel/Revio run parsing, HiFi read QC, subread and CCS statistics, barcode and adapter inspection, SMRT Link report extraction | Bash, R | 2026-06 |
 | [ngs-tools](https://github.com/Nucleomics-VIB/ngs-tools) ⭐3 | Platform-agnostic wrappers and parsers used across every project — FASTQ/BAM manipulation, coverage summaries, annotation and format conversion. ~90 scripts; the most-reused repo we have | Bash, Python, R | 2026-03 |
 | [aviti-tools](https://github.com/Nucleomics-VIB/aviti-tools) ⭐1 | Element Biosciences AVITI support: run-folder parsing, per-flowcell QC, index and demultiplexing checks, plus small Shiny views over run metrics | Bash, Python, R | 2026-07 |
-| [nanopore-tools](https://github.com/Nucleomics-VIB/nanopore-tools) ⭐4 | Oxford Nanopore (MinION / PromethION) processing: basecall summary parsing, read-length and quality QC, alignment helpers, and reporting. Companion notes live in [nanopore-tools_wiki](https://github.com/Nucleomics-VIB/nanopore-tools_wiki) | Bash, R | 2024-01 |
+| [nanopore-tools](https://github.com/Nucleomics-VIB/nanopore-tools) ⭐4 | Oxford Nanopore (MinION / PromethION) processing: basecall summary parsing, read-length and quality QC, alignment helpers, and reporting. Companion notes live in [nanopore-tools-wiki](https://github.com/Nucleomics-VIB/nanopore-tools-wiki) | Bash, R | 2024-01 |
 
 ## How to use these
 

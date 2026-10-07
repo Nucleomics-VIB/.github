@@ -10,8 +10,9 @@ analyse.
 
 | Repo | What it does | Language | Last active |
 |---|---|---|---|
-| [NC_HiFi-16S-workflow](https://github.com/Nucleomics-VIB/NC_HiFi-16S-workflow) ⭐1 | The Core's production Nextflow pipeline for full-length 16S from PacBio HiFi reads: primer trimming, denoising, ASV/OTU construction, taxonomic assignment, and a report. Start here for any 16S project | Nextflow | 2026-03 |
-| [NC_NextITS](https://github.com/Nucleomics-VIB/NC_NextITS) | Metabarcoding of fungi and other eukaryotes using full-length ITS on PacBio. Nextflow, with Docker and Singularity profiles for HPC | Nextflow, R | 2026-05 |
+| [hifi-16s-workflow-nc](https://github.com/Nucleomics-VIB/hifi-16s-workflow-nc) ⭐1 | The Core's production Nextflow pipeline for full-length 16S from PacBio HiFi reads: primer trimming, denoising, ASV/OTU construction, taxonomic assignment, and a report. Start here for any 16S project | Nextflow | 2026-03 |
+| [nextits-nc](https://github.com/Nucleomics-VIB/nextits-nc) | Metabarcoding of fungi and other eukaryotes using full-length ITS on PacBio. Nextflow, with Docker and Singularity profiles for HPC | Nextflow, R | 2026-05 |
+| [create-fungi-rdna-database](https://github.com/Nucleomics-VIB/create-fungi-rdna-database) ⭐1 | A reproducible pipeline that builds a fungal rDNA reference database from NCBI genomes, for the taxonomic assignment of ITS reads | Shell | 2025-09 |
 | [Kinnex_16S_decat_demux_bash](https://github.com/Nucleomics-VIB/Kinnex_16S_decat_demux_bash) | The step *before* analysis: takes a raw Kinnex 16S run, concatenates and deconcatenates the MAS-Seq array, demultiplexes by barcode, and emits per-sample FASTQ ready for the pipeline above | Bash | 2025-06 |
 
 ## The usual route
@@ -19,16 +20,17 @@ analyse.
 ```
 Raw Kinnex run
   └─ Kinnex_16S_decat_demux_bash   → per-sample FASTQ
-       └─ NC_HiFi-16S-workflow      → ASV table + taxonomy + report
-            └─ plotting-tools / Shiny-apps  → figures the researcher can explore
+       └─ hifi-16s-workflow-nc      → ASV table + taxonomy + report
+            └─ plotting-tools / shiny-apps  → figures the researcher can explore
 ```
 
-For ITS, `NC_NextITS` handles demultiplexing itself — go straight there.
+For ITS, `nextits-nc` handles demultiplexing itself — go straight there.
 
 ## Choosing between them
 
-- **Bacterial 16S, PacBio HiFi** → `NC_HiFi-16S-workflow`. No real alternative.
-- **Fungal or mixed-eukaryote ITS** → `NC_NextITS`.
+- **Bacterial 16S, PacBio HiFi** → `hifi-16s-workflow-nc`. No real alternative.
+- **Fungal or mixed-eukaryote ITS** → `nextits-nc`.
+- **A fungal reference database to classify against** → `create-fungi-rdna-database`.
 - **Just need the reads split by sample** → `Kinnex_16S_decat_demux_bash`, stop there.
 - **Wondering whether a method is worth it** → [benchmarks](https://github.com/Nucleomics-VIB/benchmarks) holds our head-to-head comparisons.
 

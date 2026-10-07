@@ -9,7 +9,7 @@ pipelines, toolboxes, and web tools that turn raw instrument output into answers
 This organization holds that code — from one-line `awk` helpers to containerised
 Nextflow pipelines.
 
-[![repos](https://img.shields.io/badge/public_repos-28-1f6feb)](https://github.com/orgs/Nucleomics-VIB/repositories)
+[![repos](https://img.shields.io/badge/public_repos-29-1f6feb)](https://github.com/orgs/Nucleomics-VIB/repositories)
 [![platforms](https://img.shields.io/badge/platforms-PacBio_·_ONT_·_AVITI_·_MGI-2da44e)](#families)
 [![licence](https://img.shields.io/badge/licence-GPL--3.0-8250df)](https://www.gnu.org/licenses/gpl-3.0)
 
@@ -23,14 +23,14 @@ You almost certainly arrived holding data. Find the row that matches it.
 
 | You have… | Start with | Then reach for |
 |---|---|---|
-| PacBio Revio / Kinnex HiFi reads | [pacbio-tools](https://github.com/Nucleomics-VIB/pacbio-tools) | [Kinnex_16S_decat_demux_bash](https://github.com/Nucleomics-VIB/Kinnex_16S_decat_demux_bash) → [NC_HiFi-16S-workflow](https://github.com/Nucleomics-VIB/NC_HiFi-16S-workflow) |
+| PacBio Revio / Kinnex HiFi reads | [pacbio-tools](https://github.com/Nucleomics-VIB/pacbio-tools) | [Kinnex_16S_decat_demux_bash](https://github.com/Nucleomics-VIB/Kinnex_16S_decat_demux_bash) → [hifi-16s-workflow-nc](https://github.com/Nucleomics-VIB/hifi-16s-workflow-nc) |
 | Oxford Nanopore reads | [nanopore-tools](https://github.com/Nucleomics-VIB/nanopore-tools) | [ngs-tools](https://github.com/Nucleomics-VIB/ngs-tools) |
-| Element **AVITI** output | [aviti-tools](https://github.com/Nucleomics-VIB/aviti-tools) | [variant_analysis](https://github.com/Nucleomics-VIB/variant_analysis) |
-| Full-length **16S** amplicons | [NC_HiFi-16S-workflow](https://github.com/Nucleomics-VIB/NC_HiFi-16S-workflow) | [benchmarks](https://github.com/Nucleomics-VIB/benchmarks) |
-| Fungal / eukaryote **ITS** amplicons | [NC_NextITS](https://github.com/Nucleomics-VIB/NC_NextITS) | — |
-| Bulk RNA-seq (BRB-seq) | [BRBseq-tools](https://github.com/Nucleomics-VIB/BRBseq-tools) | — |
-| A plot to make or an app to share | [plotting-tools](https://github.com/Nucleomics-VIB/plotting-tools) | [Shiny-apps](https://github.com/Nucleomics-VIB/Shiny-apps) |
-| A server to wrangle, files to move | [admin-tools](https://github.com/Nucleomics-VIB/admin-tools) | [NC_cloud-dl](https://github.com/Nucleomics-VIB/NC_cloud-dl) |
+| Element **AVITI** output | [aviti-tools](https://github.com/Nucleomics-VIB/aviti-tools) | [variant-analysis](https://github.com/Nucleomics-VIB/variant-analysis) |
+| Full-length **16S** amplicons | [hifi-16s-workflow-nc](https://github.com/Nucleomics-VIB/hifi-16s-workflow-nc) | [benchmarks](https://github.com/Nucleomics-VIB/benchmarks) |
+| Fungal / eukaryote **ITS** amplicons | [nextits-nc](https://github.com/Nucleomics-VIB/nextits-nc) | [create-fungi-rdna-database](https://github.com/Nucleomics-VIB/create-fungi-rdna-database) |
+| Bulk RNA-seq (BRB-seq) | [brbseq-tools](https://github.com/Nucleomics-VIB/brbseq-tools) | — |
+| A plot to make or an app to share | [plotting-tools](https://github.com/Nucleomics-VIB/plotting-tools) | [shiny-apps](https://github.com/Nucleomics-VIB/shiny-apps) |
+| A server to wrangle, files to move | [admin-tools](https://github.com/Nucleomics-VIB/admin-tools) | [cloud-dl-plus](https://github.com/Nucleomics-VIB/cloud-dl-plus) |
 
 ## How the code fits together
 
@@ -39,13 +39,13 @@ flowchart LR
   I["🧬 Instrument<br/>PacBio · ONT · AVITI · MGI"]
   P["Platform toolkits<br/><i>pacbio-tools · nanopore-tools<br/>aviti-tools · ngs-tools</i>"]
   A["Assay pipelines<br/><i>16S · ITS · exome · shotgun</i>"]
-  V["Variants & genomes<br/><i>variant_analysis · ChimericSeq</i>"]
-  R["Figures & apps<br/><i>plotting-tools · Shiny-apps</i>"]
+  V["Variants & genomes<br/><i>variant-analysis · chimericseq-nc</i>"]
+  R["Figures & apps<br/><i>plotting-tools · shiny-apps</i>"]
   D["📦 Delivery to the researcher"]
 
   I --> P --> A --> R --> D
   P --> V --> R
-  O["Core operations<br/><i>admin-tools · NC_cloud-dl</i>"] -.-> P
+  O["Core operations<br/><i>admin-tools · cloud-dl-plus</i>"] -.-> P
   O -.-> A
   O -.-> D
 ```
@@ -75,22 +75,22 @@ sweeps) count as pushes, so recent dates there do not always mean recent work.
 
 ## Reading a repo name
 
-Our names are a convention, not an accident. Once you know the prefix, you know
-what you are looking at:
+Names are lowercase words joined by `-`, with no prefix. A name says what the repo is
+for. What kind of thing it is (pipeline, container, web tool) is in its topics, below.
+A few suffixes carry a meaning:
 
-| Pattern | Meaning | Example |
+| Suffix | Meaning | Example |
 |---|---|---|
-| `*-tools` | A toolbox of many small, independent scripts for one platform or domain | `pacbio-tools` |
-| `NC_*` | A Core-operated pipeline or application — production-facing, versioned | `NC_HiFi-16S-workflow` |
-| `*_docker` / `*_nf` | A containerised or Nextflow implementation of a sibling pipeline | `NC_HiFi-16S-workflow_docker` |
-| `dev_wt_*` | An internal web tool under development | *(internal)* |
-| `wbt_*` | A deployed internal web tool | *(internal)* |
+| `-tools` | A toolbox of many small, independent scripts for one platform or domain | `pacbio-tools` |
+| `-nc` | Our version of code whose name belongs to someone else: a fork, or a wrapper around an upstream tool | `nextits-nc` |
+| `-plus` | A later, extended version of a sibling repo that keeps the plain name | `cloud-dl-plus` |
+| `-engine` | The compute half of a pipeline that also has a web front end | *(mostly internal)* |
 
-Not every name follows it. Repos that predate the convention (`benchmarks`,
-`InSilico_PCR`, `Shiny-apps`, `variant_analysis`, `16S_analysis_pipeline`) and forks that
-keep their upstream name (`ChimericSeq`, `mplotter`) are left as they are on purpose — a
-rename leaves a silent GitHub redirect, so old clones keep working while quietly pointing
-somewhere else. Use the topic filters below rather than the prefix when you are unsure.
+Other words in a name, such as `-analysis` or `-study`, are part of what the repo is for.
+
+Most repos took these names in September 2026. GitHub redirects the old names
+(for example `NC_HiFi-16S-workflow` or `Shiny-apps`), so old links and clones still
+work. To update a clone, run `git remote set-url origin` with the new URL.
 
 ## Filter by topic
 
@@ -132,7 +132,7 @@ caveats before you clone:
 
 - **Pipelines assume our reference layout.** Paths and reference genome locations are
   usually configurable at the top of the script; check there first.
-- **Container images beat manual installs.** Where a `_docker` sibling exists, use it.
+- **Container images beat manual installs.** Where a `-engine` sibling exists, use it.
 - **Issues are welcome**, including from outside VIB. We read them.
 
 ## Credits
@@ -141,4 +141,4 @@ Created and maintained by **Stephane Plaisance** — **VIB Nucleomics Core**.
 
 Contributions from the Core's bioinformatics and lab teams across the repos listed above.
 
-<sub>Org profile v1.2.3 · 2026-08-27 · <a href="https://www.nucleomics.be">nucleomics.be</a></sub>
+<sub>Org profile v1.3.0 · 2026-10-07 · <a href="https://www.nucleomics.be">nucleomics.be</a></sub>

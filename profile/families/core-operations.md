@@ -6,7 +6,7 @@ around, keeping servers tidy, and automating the chores nobody wants to do twice
 | Repo | What it does | Language | Last active |
 |---|---|---|---|
 | [admin-tools](https://github.com/Nucleomics-VIB/admin-tools) ⭐4 | Sysadmin tasks made easier — server housekeeping, reference-data and index management, tool installation helpers, FileSender command-line transfers, and wrappers around `samtools`, `picard`, and GATK setup | Bash, Python, R | 2026-07 |
-| [NC_cloud-dl](https://github.com/Nucleomics-VIB/NC_cloud-dl) | Manage sequencing data on Nextcloud from the command line: scripted upload, download, and share-link handling for delivering results to researchers | Bash | 2024-07 |
+| [cloud-dl-plus](https://github.com/Nucleomics-VIB/cloud-dl-plus) | Manage sequencing data on Nextcloud from the command line: scripted upload, download, and share-link handling for delivering results to researchers | Bash | 2024-07 |
 
 ## Why this family is small in public
 
@@ -17,4 +17,4 @@ that transfers to any facility.
 
 ## Related
 
-- Its predecessor `cloud-dl`, superseded by `NC_cloud-dl` → [Legacy & reference](./legacy.md)
+- Its predecessor `cloud-dl`, superseded by `cloud-dl-plus` → [Legacy & reference](./legacy.md)
