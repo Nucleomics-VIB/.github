@@ -12,7 +12,7 @@ inherited from this public repository only, so these are the files every repo fa
 
 - [`CONTRIBUTING.md`](CONTRIBUTING.md) — how to report a problem and propose a change
 - [`SECURITY.md`](SECURITY.md) — how to report something that should not be public
-- [`.github/ISSUE_TEMPLATE/`](.github/ISSUE_TEMPLATE/) — bug, change, and "which tool do I need?" forms
+- [`.github/ISSUE_TEMPLATE/`](.github/ISSUE_TEMPLATE/) — basic (title and one text box), bug, change, and "which tool do I need?" forms
 - [`PULL_REQUEST_TEMPLATE.md`](PULL_REQUEST_TEMPLATE.md) — the PR checklist
 
 A repository that defines its own version of any of these overrides the default.

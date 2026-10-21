@@ -47,7 +47,7 @@ cheap:
    so it still points at what you were looking at after the folder moves or is renamed.
    Select the lines first and a `/blob/<sha>/...#L12-L20` link **renders the code inline**
    in the issue; a `/tree/` link stays a plain link.
-3. **Fill in the "Path or area" field.** Every issue form asks for it. Write
+3. **Fill in the "Path or area" field.** The bug and change forms ask for it. Write
    `whole repository` when the issue is not scoped to one path — an empty answer just
    makes the issue harder to route.
 
