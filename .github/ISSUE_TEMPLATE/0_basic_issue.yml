@@ -1,0 +1,15 @@
+name: Basic issue
+description: A title and one text box — paste the problem or the error message as it is
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this when the other forms ask for more than you have. Give the issue a clear
+        title, then paste what you saw below. We ask for the rest if we need it.
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: Describe the problem, or paste the error message or the log output.
+    validations:
+      required: true
